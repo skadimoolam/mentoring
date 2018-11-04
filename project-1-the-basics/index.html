@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mentoring Project One</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mentoring Project One</h1>
+
+  <main class="main-content">
+    <button id="push-button" class="big-red-button">Push the button!</button>
+  </main>
+
+  <script>
+
+    //String variable
+    let words = 'This is a string';
+
+    //Number variable
+    let num = 42;
+
+    //Boolean variable
+    let isItTrue = true;
+
+    //Array variable;
+    let arr = [5, 'four', 3, ['two', 1]];
+
+    //Object variable
+    let obj = {
+      prop1: 'Hi There',
+      prop2: true,
+      prop3: 123,
+      method1: () => alert(obj.prop1)
+    }
+
+    //Adding two paramiters
+    let addIt = (param1, param2) => console.log('addIt =',param1 + param2);
+
+    //Calling addIt
+    addIt(34, 17);
+
+    //Alert 'Hi!' on button press
+    let el = document.getElementById("push-button");
+    let hi = () => {
+      alert('Hi!');
+      el.textContent === 'Push the button!' ? el.textContent = 'You Pushed it!!' : el.textContent = 'Push the button!';
+    };
+
+    el.addEventListener("click", hi);
+  </script>
+</body>
+</html>
